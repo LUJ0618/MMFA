@@ -94,7 +94,7 @@ class ModelTrainer(object):
         Optimizer = importlib.import_module('optimizer.'+optimizer).__getattribute__('Optimizer')
 
         # Define the initial param groups
-        param_groups = [{'params': Backend_params, 'lr': kwargs['LR_MHFA']}]
+        param_groups = [{'params': Backend_params, 'lr': kwargs['LR_MMFA']}]
 
         # Extract the encoder layers
         encoder_layers = self.__model__.module.__S__.model.encoder.layers
