@@ -33,7 +33,7 @@ parser.add_argument('--batch_size',     type=int,   default=400,    help='Batch 
 parser.add_argument('--max_seg_per_spk', type=int,  default=500,    help='Maximum number of utterances per speaker per epoch');
 parser.add_argument('--nDataLoaderThread', type=int, default=10,     help='Number of loader threads');
 parser.add_argument('--augment',        type=bool,  default=True,  help='Augment input')
-parser.add_argument('--seed',           type=int,   default=20211202,     help='Seed for the random number generator');
+parser.add_argument('--seed',           type=int,   default=20250902,     help='Seed for the random number generator');
 
 
 ## Training details
@@ -54,7 +54,7 @@ parser.add_argument('--pretrained_model_path',    type=str,    default="baseline
 parser.add_argument('--weight_finetuning_reg',    type=float,  default=0.001,  help='L2 regularization towards the initial pre-trained model');
 parser.add_argument('--LLRD_factor',              type=float,  default=1.0,  help='Layer-wise Learning Rate Decay (LLRD) factor');
 parser.add_argument('--LR_Transformer',           type=float,  default=2e-5,  help='Learning rate of pre-trained model');
-parser.add_argument('--LR_MHFA',                  type=float,  default=5e-3,  help='Learning rate of back-end attentive pooling model');
+parser.add_argument('--LR_MMFA',                  type=float,  default=5e-3,  help='Learning rate of back-end attentive pooling model');
 
 ## Loss functions
 parser.add_argument("--hard_prob",      type=float, default=0.5,    help='Hard negative mining probability, otherwise random, only for some loss functions');
