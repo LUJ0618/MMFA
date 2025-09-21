@@ -24,4 +24,6 @@ poetry run python train.py --eval
 ```
 ***
 ## Reference
-This code is refered by
+This code is based on
+- [Vox-Trainer](https://github.com/clovaai/voxceleb_trainer)
+- [SLT22_MultiHead-Factorized-Attentive-Pooling](https://github.com/JunyiPeng00/SLT22_MultiHead-Factorized-Attentive-Pooling?tab=readme-ov-file)
