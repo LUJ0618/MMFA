@@ -1,5 +1,10 @@
 # MMFA : Masked Multi-layer Feature Aggregation for Speaker Verification using WavLM
 ***
+### Uijong Lee and Seok-Pil Lee
+- [paper link](https://www.mdpi.com/2079-9292/14/19/3857)
+## Abstract
+peaker verification (SV) is a core technology for security and personalized services, and its importance has been growing with the spread of wearables such as smartwatches, earbuds, and AR/VR headsets, where privacy-preserving on-device operation under limited compute and power budgets is required. Recently, self-supervised learning (SSL) models such as WavLM and wav2vec 2.0 have been widely adopted as front ends that provide multi-layer speech representations without labeled data. Lower layers contain fine-grained acoustic information, whereas higher layers capture phonetic and contextual features. However, conventional SV systems typically use only the final layer or a single-step temporal attention over a simple weighted sum of layers, implicitly assuming that frame importance is shared across layers and thus failing to fully exploit the hierarchical diversity of SSL embeddings. We argue that frame relevance is layer dependent, as the frames most critical for speaker identity differ across layers. To address this, we propose Masked Multi-layer Feature Aggregation (MMFA), which first applies independent frame-wise attention within each layer, then performs learnable layer-wise weighting to suppress irrelevant frames such as silence and noise while effectively combining complementary information across layers. On VoxCeleb1, MMFA achieves consistent improvements over strong baselines in both EER and minDCF, and attention-map analysis confirms distinct selection patterns across layers, validating MMFA as a robust SV approach even in short-utterance and noisy conditions.
+
 ## Installation
 1. Install pyenv and poetry
 2. Clone this repository
